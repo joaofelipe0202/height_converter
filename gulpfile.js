@@ -3,6 +3,7 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const concat = require('gulp-concat');
+const terser = require('gulp-terser');
 
 // html tasks
 function htmlTask() {
@@ -14,6 +15,7 @@ function htmlTask() {
 function scriptTask() {
   return src('src/js/*.js')
   .pipe(concat('all.js'))
+  .pipe(terser())
   .pipe(dest('dist/js'));
 }
 
