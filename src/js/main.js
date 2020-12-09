@@ -8,7 +8,7 @@ converter.addEventListener('submit', event => {
   height = parseInt(height.value);
 
   if (height < 170) {
-    converter.style.backgroundColor = "red";
+    converter.style.backgroundColor = "rgb(2,0,30);";
   } else if (height > 170 && height <= 180) {
     converter.style.backgroundColor = "blue";
   } else if (height > 180 && height <= 190) {
@@ -34,13 +34,3 @@ converter.addEventListener('submit', event => {
 })
 
 
-
-
-
-
-/*let number = 175;
-let feet = number*0.0328084;
-
-let decimal = feet - Math.trunc(feet);
-let inches = Math.ceil(decimal*12)
-console.log(`${Math.trunc(feet)}' ${inches}"`)*/
