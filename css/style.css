@@ -34,7 +34,7 @@ label {
   padding-right: 30px;
 }
 
-.centimeters {
+.height {
   width: 200px;
   height: 40px;
 }
@@ -54,6 +54,14 @@ label {
 .convert-height {
   width: 150px;
   height: 40px;
-  border-radius: 25px;
-  background-color: rgb(219,215,210);
+  border-radius: 15px;
+  background-color: rgb(142, 142, 243);
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.convert-height:hover {
+  background-color: white;
+  color: rgb(142, 142, 243);
 }
