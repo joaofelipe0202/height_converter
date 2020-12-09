@@ -4,6 +4,8 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const concat = require('gulp-concat');
 const terser = require('gulp-terser');
+const imagemin = require('gulp-imagemin');
+const sourcemap = require('gulp-sourcemaps');
 
 // html tasks
 function htmlTask() {
@@ -23,13 +25,16 @@ function scriptTask() {
 function styleTask() {
   return src('src/css/*.css')
   .pipe(concat('all.css'))
+  .pipe(sourcemap.init())
   .pipe(postcss([autoprefixer(), cssnano()]))
+  .pipe(sourcemap.write())
   .pipe(dest('dist/css'));
 }
 
 //images tasks
 function imagesTask() {
   return src('src/images/*')
+  .pipe(imagemin())
   .pipe(dest('dist/images'));
 }
 

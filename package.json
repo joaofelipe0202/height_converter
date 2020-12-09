@@ -24,5 +24,9 @@
     "gulp-postcss": "^9.0.0",
     "gulp-terser": "^2.0.0",
     "postcss": "^8.2.1"
+  },
+  "dependencies": {
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sourcemaps": "^3.0.0"
   }
 }
