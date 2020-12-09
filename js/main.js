@@ -7,6 +7,16 @@ converter.addEventListener('submit', event => {
   event.preventDefault();
   height = parseInt(height.value);
 
+  if (height < 170) {
+    converter.style.backgroundColor = "red";
+  } else if (height > 170 && height <= 180) {
+    converter.style.backgroundColor = "blue";
+  } else if (height > 180 && height <= 190) {
+    converter.style.backgroundColor = "green";
+  } else if (height > 190) {
+    converter.style.backgroundColor = "brown";
+  }
+
   if (isNaN(height) || (height.value = '')) {
     alert('Only valid numbers, please');
   } else if (height <= 0) {
@@ -18,6 +28,8 @@ converter.addEventListener('submit', event => {
 
     feetValue.value = `${Math.trunc(feet)}'`;
     inchesValue.value = `${inches}"`;
+
+    document.querySelector('.height').value = '';
   }
 })
 

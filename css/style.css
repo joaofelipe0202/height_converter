@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-form {
+.converter {
   margin: 50px auto;
   width: 500px;
   height: 400px;
