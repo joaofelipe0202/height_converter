@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/joaofelipe0202/my-project/issues"
   },
-  "homepage": "https://github.com/joaofelipe0202/my-project#readme"
+  "homepage": "https://github.com/joaofelipe0202/my-project#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
