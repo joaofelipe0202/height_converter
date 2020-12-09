@@ -1,0 +1,13 @@
+body {
+  background-image: url('images/background-project.jpg');
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: .5em;
+}
+
+label {
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
