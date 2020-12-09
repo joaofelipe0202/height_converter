@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  margin: 50px auto;
+  width: 500px;
+  height: 350px;
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1, h3 {
+  color: white;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px auto;
+}
