@@ -8,7 +8,8 @@
   margin: 50px auto;
   width: 500px;
   height: 400px;
-  background-color: black;
+  background: rgb(2,0,36);
+  background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(67,107,115,1) 100%);
   border-radius: 10px;
 }
 
@@ -53,4 +54,6 @@ label {
 .convert-height {
   width: 150px;
   height: 40px;
+  border-radius: 25px;
+  background-color: rgb(219,215,210);
 }
